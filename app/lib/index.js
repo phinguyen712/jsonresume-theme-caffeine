@@ -5,7 +5,7 @@ const
     fs = require('fs'),
     renderHtml = require(rootPath +'/index').render;
 
-//creates an html resume file
+//compile html version of resume
 function createResume(readPath, writePath ,cb){
   fs.readFile((rootPath + '/resume.json'), function(err, resumeJson) {
     if(err){

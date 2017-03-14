@@ -8,6 +8,7 @@ function init(server){
   });
 
   server.use('/api',api);
+
 }
 
 

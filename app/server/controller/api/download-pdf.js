@@ -21,7 +21,7 @@ function sendPdf(req,res){
 }
 
 function downloadPdf(req,res){
-  console.log('starting html --> pdf');
+  console.log('Compiling resume.pdf...');
   const command = 'gulp export';
 
   fs.stat(rootPath + '/resume.pdf',function(err){
